@@ -10,7 +10,7 @@ This a data file for [YADER](https://maryknollrad.github.io/yader).
     1. Series position : 0 to number of series, -1 for last one
     1. Series name : part of series name, YADER selects first series that contains specified string value.
 1. Write Regular expression for the target positions of dose value 
-    \  for further information about regular expression, see [Oracle's page about Pattern](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html)
+      for further information about regular expression, see [Oracle's page about Pattern](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html)
 1. Add 3 lines to ct-info.conf
     1. Manufacturer.Model.dose-series-by : one of "number", "index", or "name"
     1. Manufacturer.Model.dose-series-value : target value
@@ -18,7 +18,7 @@ This a data file for [YADER](https://maryknollrad.github.io/yader).
 
 ## Example
 * Scanners from Toshiba use series number 9000 for dose report series
-* Dose values are located at either #P1 or #P2 within following format \  
+* Dose values are located at either #P1 or #P2 within following format  
 `Total DLP(mGy.cm): (Head): #P1  (Body): #P2`
     * Possible target positions are marked with capturing groups, using parentheses
     * Need to escape actual parenthesis using backslash, `\\(` or `\\)`
